@@ -1,0 +1,18 @@
+<br /><br />
+<h2>Add a new person!!</h2>
+<a routerLink="/home"
+  ><button class="btn btn-success pull-right">Back home!</button></a
+>
+
+<input
+  id="name-input"
+  minlength="0"
+  maxlength="45"
+  placeholder="Enter name for new person"
+/>
+<input id="job-input" minlength="0" maxlength="45" placeholder="Enter job" />
+
+<div>
+  <button (click)="saveData()">Submit</button>
+  <button (click)="reset()">Clear fields</button>
+</div>

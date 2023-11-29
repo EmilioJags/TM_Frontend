@@ -1,0 +1,14 @@
+<br />
+<br />
+
+<div *ngIf="person">
+  <h3>Welcome to {{ person.name }}'s details</h3>
+  <div><label>Id: </label>{{ person.id }}</div>
+  <div><label>Name: </label> {{ person.name }}</div>
+  <div><label>Job: </label> {{ person.job }}</div>
+  <p>
+    <a routerLink="/home"
+      ><button class="btn btn-success pull-right">Back home</button></a
+    >
+  </p>
+</div>

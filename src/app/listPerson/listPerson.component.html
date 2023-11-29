@@ -1,0 +1,23 @@
+<h2>Displaying the list!!</h2>
+<a routerLink="/add"
+  ><button class="btn btn-success pull-right">Add Person</button></a
+>
+
+<table>
+  <div (click)="(clickEd)" style="display: flex">
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Job</th>
+    </tr>
+  </div>
+  <tr *ngFor="let person of listPerson">
+    <div (click)="(clickEd)" style="display: flex">
+      <a [routerLink]="['/', person.id]"
+        ><td>{{ person.id }}</td></a
+      >
+      <td>{{ person.name }}</td>
+      <td>{{ person.job }}</td>
+    </div>
+  </tr>
+</table>
